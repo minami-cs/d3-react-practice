@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "LeferiPoint-WhiteObliqueA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 30px;
+  padding: 0 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.svg-wrapper {
+  margin: 0;
+  padding: 0;
+  height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+svg {
+  margin: 0;
+  background: #eee;
+  overflow: visible;
+  width: 100%;
+  height: 400px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: "LeferiPoint-WhiteObliqueA";
+  font-weight: 600;
+  background-color: #e6e6fa;
+}
+
+button:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #33006f;
+  color: #e6e6fa;
 }
